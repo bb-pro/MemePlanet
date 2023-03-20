@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Networking task-->
+        <!--Fetch Memes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Networking_HW_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Networking_HW_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                             <constraint firstItem="8AG-WG-I56" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n0Y-xP-FxC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Networking task" id="12P-PM-t8x"/>
+                    <navigationItem key="navigationItem" title="Fetch Memes" id="12P-PM-t8x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
