@@ -8,7 +8,9 @@
 import UIKit
 
 final class MainViewController: UIViewController {
+    
     private let memeUrl = "https://api.imgflip.com/get_memes"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchMemes()
