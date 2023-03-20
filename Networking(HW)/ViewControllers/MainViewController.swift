@@ -31,9 +31,11 @@ private extension MainViewController {
             do {
                 let response = try decoder.decode(Response.self, from: data)
                 let memes = response.data.memes
-                print(memes.count)
-                print(memes.randomElement() ?? "")
+                print("Total number of memes: \(memes.count)")
                 //print(memes)
+                guard let meme = memes.randomElement() else { return }
+                print("Random Meme: \(meme)")
+                
             } catch let error {
                 print(error.localizedDescription)
             }
