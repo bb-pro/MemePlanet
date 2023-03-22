@@ -42,7 +42,7 @@
 		80FFBFE429C87B7C009B85E3 = {
 			isa = PBXGroup;
 			children = (
-				80FFBFEF29C87B7C009B85E3 /* Networking(HW) */,
+				80FFBFEF29C87B7C009B85E3 /* MemePlanet */,
 				80FFBFEE29C87B7C009B85E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		80FFBFEF29C87B7C009B85E3 /* Networking(HW) */ = {
+		80FFBFEF29C87B7C009B85E3 /* MemePlanet */ = {
 			isa = PBXGroup;
 			children = (
 				80FFC00729C882B5009B85E3 /* Models */,
@@ -64,7 +64,7 @@
 				80FFC00629C8823A009B85E3 /* Storyboards */,
 				80FFBFF929C87B80009B85E3 /* Assets.xcassets */,
 			);
-			path = "Networking(HW)";
+			path = MemePlanet;
 			sourceTree = "<group>";
 		};
 		80FFC00429C88219009B85E3 /* App */ = {
