@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		80FFBFED29C87B7C009B85E3 /* Networking(HW).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Networking(HW).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FFBFED29C87B7C009B85E3 /* MemePlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemePlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FFBFF029C87B7C009B85E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FFBFF229C87B7C009B85E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		80FFBFF429C87B7C009B85E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		80FFBFEE29C87B7C009B85E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80FFBFED29C87B7C009B85E3 /* Networking(HW).app */,
+				80FFBFED29C87B7C009B85E3 /* MemePlanet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		80FFBFEC29C87B7C009B85E3 /* Networking(HW) */ = {
+		80FFBFEC29C87B7C009B85E3 /* MemePlanet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80FFC00129C87B80009B85E3 /* Build configuration list for PBXNativeTarget "Networking(HW)" */;
+			buildConfigurationList = 80FFC00129C87B80009B85E3 /* Build configuration list for PBXNativeTarget "MemePlanet" */;
 			buildPhases = (
 				80FFBFE929C87B7C009B85E3 /* Sources */,
 				80FFBFEA29C87B7C009B85E3 /* Frameworks */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = "Networking(HW)";
+			name = MemePlanet;
 			productName = "Networking(HW)";
-			productReference = 80FFBFED29C87B7C009B85E3 /* Networking(HW).app */;
+			productReference = 80FFBFED29C87B7C009B85E3 /* MemePlanet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 80FFBFE829C87B7C009B85E3 /* Build configuration list for PBXProject "Networking(HW)" */;
+			buildConfigurationList = 80FFBFE829C87B7C009B85E3 /* Build configuration list for PBXProject "MemePlanet" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80FFBFEC29C87B7C009B85E3 /* Networking(HW) */,
+				80FFBFEC29C87B7C009B85E3 /* MemePlanet */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		80FFBFE829C87B7C009B85E3 /* Build configuration list for PBXProject "Networking(HW)" */ = {
+		80FFBFE829C87B7C009B85E3 /* Build configuration list for PBXProject "MemePlanet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80FFBFFF29C87B80009B85E3 /* Debug */,
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80FFC00129C87B80009B85E3 /* Build configuration list for PBXNativeTarget "Networking(HW)" */ = {
+		80FFC00129C87B80009B85E3 /* Build configuration list for PBXNativeTarget "MemePlanet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80FFC00229C87B80009B85E3 /* Debug */,
