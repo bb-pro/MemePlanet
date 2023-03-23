@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80BF4EB129CC2E1C0055768B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF4EB029CC2E1C0055768B /* NetworkManager.swift */; };
 		80FFBFF129C87B7C009B85E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFBFF029C87B7C009B85E3 /* AppDelegate.swift */; };
 		80FFBFF329C87B7C009B85E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFBFF229C87B7C009B85E3 /* SceneDelegate.swift */; };
 		80FFBFF529C87B7C009B85E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFBFF429C87B7C009B85E3 /* MainViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80BF4EB029CC2E1C0055768B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		80FFBFED29C87B7C009B85E3 /* MemePlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemePlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FFBFF029C87B7C009B85E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FFBFF229C87B7C009B85E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80BF4EAF29CC2DE90055768B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80BF4EB029CC2E1C0055768B /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		80FFBFE429C87B7C009B85E3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +68,10 @@
 		80FFBFEF29C87B7C009B85E3 /* MemePlanet */ = {
 			isa = PBXGroup;
 			children = (
-				80FFC00729C882B5009B85E3 /* Models */,
 				80FFC00429C88219009B85E3 /* App */,
 				80FFC00529C88224009B85E3 /* ViewControllers */,
+				80FFC00729C882B5009B85E3 /* Models */,
+				80BF4EAF29CC2DE90055768B /* Services */,
 				80FFC00629C8823A009B85E3 /* Storyboards */,
 				80FFBFF929C87B80009B85E3 /* Assets.xcassets */,
 			);
@@ -175,6 +186,7 @@
 			files = (
 				80FFC00929C882C3009B85E3 /* Meme.swift in Sources */,
 				80FFBFF529C87B7C009B85E3 /* MainViewController.swift in Sources */,
+				80BF4EB129CC2E1C0055768B /* NetworkManager.swift in Sources */,
 				80FFBFF129C87B7C009B85E3 /* AppDelegate.swift in Sources */,
 				80FFBFF329C87B7C009B85E3 /* SceneDelegate.swift in Sources */,
 			);
@@ -325,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Networking(HW)/App/Info.plist";
+				INFOPLIST_FILE = MemePlanet/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -353,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Networking(HW)/App/Info.plist";
+				INFOPLIST_FILE = MemePlanet/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
