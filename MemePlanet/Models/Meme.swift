@@ -4,19 +4,18 @@
 //
 //  Created by Bektemur Mamashayev on 20/03/23.
 //
-struct Meme: Codable {
+struct Meme: Decodable {
     let id: String
     let name: String
     let url: String
-    let box_count: Int
 }
 
-struct MemeData: Codable {
+struct MemeData: Decodable {
     let memes: [Meme]
 }
 
 
-struct Response: Codable {
+struct Response: Decodable {
     let success: Bool
     let data: MemeData
 }

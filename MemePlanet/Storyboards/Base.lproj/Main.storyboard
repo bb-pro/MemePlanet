@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-QO-Mst">
-                                <rect key="frame" x="115" y="272" width="200" height="239.33333333333337"/>
+                                <rect key="frame" x="115" y="175" width="200" height="275"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hLI-xx-1V2">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -25,31 +26,90 @@
                                             <constraint firstAttribute="width" constant="200" id="fbB-xi-mJp"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGs-7H-Pka">
-                                        <rect key="frame" x="79.333333333333343" y="219" width="41.333333333333343" height="20.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGs-7H-Pka">
+                                        <rect key="frame" x="100" y="219" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="COw-Wc-NvP">
+                                        <rect key="frame" x="81.666666666666657" y="238" width="37" height="37"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="WLc-6l-EN5">
+                                <rect key="frame" x="132" y="736.33333333333337" width="166" height="111.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et1-WR-wK2">
+                                        <rect key="frame" x="17.666666666666657" y="0.0" width="131" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="List of memes"/>
+                                        <connections>
+                                            <segue destination="dAX-eG-rDO" kind="show" id="lLa-rR-3SJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ky-dD-z7r">
+                                        <rect key="frame" x="0.0" y="77.333333333333258" width="166" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Get random Meme"/>
+                                        <connections>
+                                            <action selector="randomMemeButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuB-4F-rkM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="y1y-QO-Mst" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="kXM-Ej-dof"/>
+                            <constraint firstItem="WLc-6l-EN5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.119814" id="EhB-Gd-Y8S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WLc-6l-EN5" secondAttribute="bottom" constant="50" id="fVI-2C-DPT"/>
+                            <constraint firstItem="WLc-6l-EN5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k9r-J3-Rhx"/>
+                            <constraint firstItem="y1y-QO-Mst" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kXM-Ej-dof"/>
                             <constraint firstItem="y1y-QO-Mst" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s0q-Pe-v5r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fetching Memes" id="12P-PM-t8x"/>
                     <connections>
-                        <outlet property="memeImageView" destination="hLI-xx-1V2" id="R0R-oR-hhk"/>
-                        <outlet property="memeLabel" destination="jGs-7H-Pka" id="1Et-wG-OGJ"/>
+                        <outlet property="activityIndicator" destination="COw-Wc-NvP" id="oit-P9-fGI"/>
+                        <outlet property="buttonsStackView" destination="WLc-6l-EN5" id="uDM-Ap-rev"/>
+                        <outlet property="memeImageView" destination="hLI-xx-1V2" id="1hG-yZ-czK"/>
+                        <outlet property="memeLabel" destination="jGs-7H-Pka" id="efm-s1-OFw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="933.48837209302326" y="3.218884120171674"/>
+        </scene>
+        <!--Memes-->
+        <scene sceneID="xx2-tb-Aaa">
+            <objects>
+                <tableViewController id="dAX-eG-rDO" customClass="MemeListViewController" customModule="MemePlanet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="uYG-lO-a1l">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memeCell" id="1Ml-Us-nqc">
+                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Ml-Us-nqc" id="7zh-uw-tPZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dAX-eG-rDO" id="8RC-1z-csl"/>
+                            <outlet property="delegate" destination="dAX-eG-rDO" id="A0R-n1-uLW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Memes" id="AsN-Wc-dUY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Psi-su-YUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="knz-YZ-sxf">
@@ -60,7 +120,7 @@
                         <rect key="frame" x="0.0" y="59" width="430" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -73,4 +133,9 @@
             <point key="canvasLocation" x="34.883720930232556" y="3.218884120171674"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
