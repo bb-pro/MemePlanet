@@ -42,6 +42,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fetching Memes" id="12P-PM-t8x"/>
+                    <connections>
+                        <outlet property="memeImageView" destination="hLI-xx-1V2" id="R0R-oR-hhk"/>
+                        <outlet property="memeLabel" destination="jGs-7H-Pka" id="1Et-wG-OGJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
