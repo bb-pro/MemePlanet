@@ -9,7 +9,7 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
-    private let memeUrl = URL(string: "https://api.imgflip.com/get_memes")
+    private let memeUrl = URL(string: "https://api.imgflip.com/get_memes")!
     private let networkManager = NetworkManager.shared
     
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ final class MainViewController: UIViewController {
 //MARK: - Networking
 private extension MainViewController {
     func fetchMemes() {
-        networkManager.fetch(Response.self, from: memeUrl!) { result in
+        networkManager.fetch(Response.self, from: memeUrl) { result in
             switch result {
             case .success(let meme):
                 print(meme)
