@@ -141,14 +141,6 @@
                                     </activityIndicatorView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ig-I5-sHc">
-                                <rect key="frame" x="169" y="813.66666666666663" width="92.333333333333314" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title="Share"/>
-                                <connections>
-                                    <action selector="shareAction" destination="bs3-yr-FrK" eventType="touchUpInside" id="QwQ-Pc-TUl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uNw-X8-GaZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -157,8 +149,6 @@
                             <constraint firstItem="uNw-X8-GaZ" firstAttribute="trailing" secondItem="aVa-A7-oM0" secondAttribute="trailing" constant="50" id="Off-f5-Va3"/>
                             <constraint firstItem="uNw-X8-GaZ" firstAttribute="bottom" secondItem="aVa-A7-oM0" secondAttribute="bottom" constant="250" id="QHF-4e-hg7"/>
                             <constraint firstItem="aVa-A7-oM0" firstAttribute="leading" secondItem="uNw-X8-GaZ" secondAttribute="leading" constant="50" id="btp-7d-rJg"/>
-                            <constraint firstItem="uNw-X8-GaZ" firstAttribute="bottom" secondItem="2ig-I5-sHc" secondAttribute="bottom" constant="50" id="h9s-9n-ucm"/>
-                            <constraint firstItem="2ig-I5-sHc" firstAttribute="centerX" secondItem="l29-ug-zqL" secondAttribute="centerX" id="vq1-Kj-op3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Meme Info" id="iI6-8e-Opj"/>
@@ -195,7 +185,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
