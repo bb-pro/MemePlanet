@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933.48837209302326" y="3.218884120171674"/>
+            <point key="canvasLocation" x="819" y="3"/>
         </scene>
         <!--Memes-->
         <scene sceneID="xx2-tb-Aaa">
@@ -113,7 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Psi-su-YUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1794" y="3"/>
+            <point key="canvasLocation" x="1623" y="3"/>
         </scene>
         <!--Meme Info-->
         <scene sceneID="wST-gO-Udm">
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA2-Z7-cDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2659.5348837209303" y="2.5751072961373391"/>
+            <point key="canvasLocation" x="2408" y="3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="knz-YZ-sxf">
