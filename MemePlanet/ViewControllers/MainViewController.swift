@@ -31,6 +31,12 @@ final class MainViewController: UIViewController {
     @IBAction func randomMemeButtonPressed() {
         updateUI()
     }
+    
+//    @IBAction func getMemeListPressed() {
+//        performSegue(withIdentifier: "showMemeList", sender: nil)
+//    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let memeListVC = segue.destination as? MemeListViewController else { return }
         memeListVC.memeList = response.data.memes
@@ -47,9 +53,6 @@ private extension MainViewController {
                 self?.response = data
                 self?.randomMeme = self?.response.data.memes.randomElement()
                 self?.fetchImage()
-                print(self?.response)
-                print(self?.randomMeme)
-            
             case .failure(let error):
                 print(error)
             }

@@ -46,7 +46,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="List of memes"/>
                                         <connections>
-                                            <segue destination="dAX-eG-rDO" kind="show" id="lLa-rR-3SJ"/>
+                                            <segue destination="dAX-eG-rDO" kind="show" id="5Yw-y8-FM1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ky-dD-z7r">
@@ -98,6 +98,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="bs3-yr-FrK" kind="show" id="wUN-Q8-M8x"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -110,6 +114,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Psi-su-YUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1794" y="3"/>
+        </scene>
+        <!--Meme Info-->
+        <scene sceneID="wST-gO-Udm">
+            <objects>
+                <viewController id="bs3-yr-FrK" customClass="MemeInfoViewController" customModule="MemePlanet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="l29-ug-zqL">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aVa-A7-oM0">
+                                <rect key="frame" x="50" y="195" width="330" height="453"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ka-Q0-FRN">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="379.66666666666669"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-TI-eSX">
+                                        <rect key="frame" x="140" y="387.66666666666663" width="50" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Bp9-7a-VvH">
+                                        <rect key="frame" x="146.66666666666666" y="416" width="37" height="37"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ig-I5-sHc">
+                                <rect key="frame" x="169" y="813.66666666666663" width="92.333333333333314" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title="Share"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uNw-X8-GaZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aVa-A7-oM0" firstAttribute="top" secondItem="uNw-X8-GaZ" secondAttribute="top" constant="40" id="2Jv-Y8-Bhr"/>
+                            <constraint firstItem="uNw-X8-GaZ" firstAttribute="trailing" secondItem="aVa-A7-oM0" secondAttribute="trailing" constant="50" id="Off-f5-Va3"/>
+                            <constraint firstItem="uNw-X8-GaZ" firstAttribute="bottom" secondItem="aVa-A7-oM0" secondAttribute="bottom" constant="250" id="QHF-4e-hg7"/>
+                            <constraint firstItem="aVa-A7-oM0" firstAttribute="leading" secondItem="uNw-X8-GaZ" secondAttribute="leading" constant="50" id="btp-7d-rJg"/>
+                            <constraint firstItem="uNw-X8-GaZ" firstAttribute="bottom" secondItem="2ig-I5-sHc" secondAttribute="bottom" constant="50" id="h9s-9n-ucm"/>
+                            <constraint firstItem="2ig-I5-sHc" firstAttribute="centerX" secondItem="l29-ug-zqL" secondAttribute="centerX" id="vq1-Kj-op3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meme Info" id="iI6-8e-Opj"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Bp9-7a-VvH" id="Nmm-dM-QXQ"/>
+                        <outlet property="memeImageView" destination="2Ka-Q0-FRN" id="kPq-hI-vJc"/>
+                        <outlet property="memeLabel" destination="JD3-TI-eSX" id="69h-UG-Bbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EA2-Z7-cDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2659.5348837209303" y="2.5751072961373391"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="knz-YZ-sxf">
@@ -134,6 +192,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
