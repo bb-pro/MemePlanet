@@ -145,6 +145,9 @@
                                 <rect key="frame" x="169" y="813.66666666666663" width="92.333333333333314" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title="Share"/>
+                                <connections>
+                                    <action selector="shareAction" destination="bs3-yr-FrK" eventType="touchUpInside" id="QwQ-Pc-TUl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uNw-X8-GaZ"/>

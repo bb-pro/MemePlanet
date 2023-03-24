@@ -14,7 +14,6 @@ struct MemeData: Decodable {
     let memes: [Meme]
 }
 
-
 struct Response: Decodable {
     let success: Bool
     let data: MemeData

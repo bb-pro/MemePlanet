@@ -23,6 +23,14 @@ final class MemeInfoViewController: UIViewController {
         activityIndicator.startAnimating()
         fetchImage()
     }
+    
+    @IBAction func shareAction() {
+//        let shareActivityController = UIActivityViewController(
+//            activityItems: [dogImage!],
+//            applicationActivities: nil)
+//        present(shareActivityController, animated: true)
+    }
+    
 }
 
 private extension MemeInfoViewController {

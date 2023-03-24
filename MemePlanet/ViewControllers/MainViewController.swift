@@ -14,7 +14,6 @@ final class MainViewController: UIViewController {
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var buttonsStackView: UIStackView!
     
-    
     private let memeUrl = URL(string: "https://api.imgflip.com/get_memes")!
     private let networkManager = NetworkManager.shared
     private var response: Response!
@@ -24,7 +23,6 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         activityIndicator.hidesWhenStopped = true
         updateUI()
-        
     }
     
     
@@ -32,16 +30,10 @@ final class MainViewController: UIViewController {
         updateUI()
     }
     
-//    @IBAction func getMemeListPressed() {
-//        performSegue(withIdentifier: "showMemeList", sender: nil)
-//    }
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let memeListVC = segue.destination as? MemeListViewController else { return }
         memeListVC.memeList = response.data.memes
     }
-    
 }
 
 //MARK: - Networking
