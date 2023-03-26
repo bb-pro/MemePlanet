@@ -50,6 +50,7 @@ private extension MainViewController {
             }
         }
     }
+    
     func fetchImage() {
         guard let url = URL(string: randomMeme.url) else { return }
         networkManager.fetchImage(from: url) { [weak self] result in
