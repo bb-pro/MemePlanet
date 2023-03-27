@@ -23,6 +23,9 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         activityIndicator.hidesWhenStopped = true
         updateUI()
+        
+        
+        
     }
     
     
